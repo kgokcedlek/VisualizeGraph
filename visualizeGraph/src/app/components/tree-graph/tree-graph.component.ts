@@ -32,8 +32,8 @@ export class TreeGraphComponent implements OnInit{
 
   createTree(data: TreeNode) {
     // Explicitly define the width and height for the SVG
-    const width = 600;
-    const height = 400;
+    const width = 900;
+    const height = 600;
 
     const svg = d3
       .select(this.treeContainer.nativeElement)
@@ -58,10 +58,7 @@ export class TreeGraphComponent implements OnInit{
       .attr('class', 'node')
       .attr('transform', (d) => `translate(${d.y}, ${d.x})`);
 
-    //nodes.append('circle').attr('r', 5);
     nodes.on('click', (event, d) => {
-      // 'd' represents the node data
-      //alert(`Node clicked: ${d.data.name}`);
       event.stopPropagation();
       this.showDetails=true;
       this.nodeInfo={name:d.data.name, description:d.data.description};
@@ -69,10 +66,10 @@ export class TreeGraphComponent implements OnInit{
 
     nodes
     .append('rect')
-    .attr('width', 90)
-    .attr('height', 30)
-    .attr('x', -90)
-    .attr('y', -15)
+    .attr('width', 150)
+    .attr('height', 70)
+    .attr('x', -150)
+    .attr('y', -35)
     .style('fill', '#8e44ad')
     .style('stroke', '#333')
     .attr('rx', 5)
@@ -92,7 +89,7 @@ export class TreeGraphComponent implements OnInit{
       .attr('class', 'link')
       .attr('x1', (d) => d.source.y ?? 0)
       .attr('y1', (d) => d.source.x ?? 0)
-      .attr('x2', (d) => (d.target.y ?? 0)-90)
+      .attr('x2', (d) => (d.target.y ?? 0)-150)
       .attr('y2', (d) => (d.target.x ?? 0))
       .style('stroke', 'black') ;      
   }
