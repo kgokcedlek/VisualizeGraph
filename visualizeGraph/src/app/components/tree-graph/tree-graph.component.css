@@ -1,0 +1,17 @@
+.tree-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    padding: 10px; /* Add some padding */
+  }
+  .tree{
+    width: 70%;
+    height: 70%;
+  }
+  
+  .popUp{
+    width: 30%;
+    height: 20%;
+  }

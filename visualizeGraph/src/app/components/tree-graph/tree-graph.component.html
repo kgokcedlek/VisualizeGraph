@@ -1,0 +1,7 @@
+<div  class="tree-container">
+<div class="popUp" (click)="onBackgroundClick($event)">
+    <app-popup *ngIf="showDetails" [nodeInfo]="nodeInfo" ></app-popup>
+</div>
+<div #treeContainer class="tree"></div>
+ <!-- <div *ngIf="!serviceSampleData">Loading data...</div>-->
+</div>
