@@ -1,7 +1,7 @@
 {
   "scripts": {
     "server": "nodemon graphDataServerApp/server.js",
-    "client": "cd visualizeGraph && ng serve",
+    "client": "cd visualizeGraph && npm run ng serve",
     "dev": "concurrently --kill-others \"npm run server\" \"npm run client\""
   },
   "dependencies": {
