@@ -1,7 +1,8 @@
-<div  class="tree-container">
-<div class="popUp" (click)="onBackgroundClick($event)">
-    <app-popup *ngIf="showDetails" [nodeInfo]="nodeInfo" ></app-popup>
-</div>
-<div #treeContainer class="tree"></div>
- <!-- <div *ngIf="!serviceSampleData">Loading data...</div>-->
+<div class="tree-container">
+    <div class="popUp">
+        <app-popup [showPopUp]="showDetails |async" [nodeInfo]="(nodeInfo |async)"
+            (popUpEvent)="unSelectNode($event)"></app-popup>
+    </div>
+    <div #treeContainer class="tree"></div>
+    <!-- <div *ngIf="!serviceSampleData">Loading data...</div>-->
 </div>

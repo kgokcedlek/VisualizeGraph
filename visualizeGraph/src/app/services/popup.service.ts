@@ -6,7 +6,7 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class PopupService {
 
-  constructor(private dialog: MatDialog) {}
+  constructor(private dialog: MatDialog) { }
 
   openPopup() {
     this.dialog.open(PopupComponent);

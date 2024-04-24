@@ -1,8 +1,19 @@
 {
+  "scripts": {
+    "start:express": "rm -f express.pid && cd graphDataServerApp && node server.js & echo $! > express.pid",
+    "start:angular": "rm -f express.pid && cd visualizeGraph && ng serve --open --port 4300 & echo $! > angular.pid",
+    "start:both": "npm-run-all --parallel start:express start:angular",
+    "stop:express": "[ -f express.pid ] && kill -9 $(cat express.pid) && rm express.pid",
+    "stop:angular": "[ -f angular.pid ] && kill -9 $(cat angular.pid) && rm angular.pid",
+    "stop:both": "npm-run-all stop:express stop:angular"
+  },
+  
   "dependencies": {
-    "d3": "^7.9.0"
+    "d3": "^7.9.0",
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "@types/d3": "^7.4.3"
+    "@types/d3": "^7.4.3",
+    "npm-run-all": "^4.1.5"
   }
 }

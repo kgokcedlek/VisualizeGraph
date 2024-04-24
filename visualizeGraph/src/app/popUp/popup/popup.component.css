@@ -1,33 +1,47 @@
 .popUpContainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
-    padding: 10px; /* Add some padding */
-  }
-  
-  .content {
-    width: 90%; /* Occupies 90% of the container's width */
-    height: 80%; /* Full height of the container */
-    text-align: left; /* Align text to the left */
-    background-color: #f0f0f0;
-    padding: 10px; /* Add some padding to the content */
-    border: 2px solid #ccc; /* border */
-  }
-  
-  .action {
-    width: 10%; /* Occupies 15% of the container's width */
-    height: 20%; /* Occupies 15% of the container's height */
-    display: flex;
-    justify-content: center; /* Center the button horizontally */
-    align-items: center; /* Center the button vertically */
-  }
-  
-  button {
-    width: 100%; /* Make button width fill its parent */
-    height: 100%; /* Make button height fill its parent */
-    background-color: #f0f0f0; /* background color for the button */
-    font-size: 1.2em;
-    border: 2px solid #ccc; 
-  }
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* Align items to the top */
+  padding: 10px;
+  /* Add some padding */
+}
+
+.content {
+  width: 90%;
+  /* Occupies 90% of the container's width */
+  height: 80%;
+  /* Full height of the container */
+  text-align: left;
+  /* Align text to the left */
+  background-color: #f0f0f0;
+  padding: 10px;
+  /* Add some padding to the content */
+  border: 2px solid #ccc;
+  /* border */
+}
+
+.action {
+  width: 10%;
+  /* Occupies 20% of the container's width */
+  height: 20%;
+  /* Occupies 20% of the container's height */
+  display: flex;
+  justify-content: center;
+  /* Center the button horizontally */
+  align-items: center;
+  /* Center the button vertically */
+}
+
+button {
+  width: 100%;
+  /* Make button width fill its parent */
+  height: 100%;
+  /* Make button height fill its parent */
+  background-color: #f0f0f0;
+  /* background color for the button */
+  font-size: 1.2em;
+  border: 2px solid #ccc;
+}

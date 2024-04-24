@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: ./visualizeGraph/Dockerfile # Path to Angular Dockerfile
+    ports:
+      - "4200:80" # Map Angular app port to host
+
+  backend:
+    build:
+      context: ./graphDataServerApp/Dockerfile # Path to Express Dockerfile
+    ports:
+      - "3000:3000" # Map Express app port to host
+
+    # Optional: Define environment variables or additional settings
+    environment:
+      NODE_ENV: production
