@@ -3,6 +3,7 @@
 <!--INSTALLATION : -->
 <!-- PLEASE RUN NPM INSTALL COMMAND FOR EACH PACKAGE.JSON IN EACH DIRECTORY! PLEASE LOOK AT THE COMMANDS BELOW-->
 <!--ROOT_DIR is the directory of the VisualizeGraph root folder which includes clients app,server app-->
+<!--pre-condition: this project needs node.js>
 
 git clone  https://github.com/kgokcedlek/VisualizeGraph.git
 
